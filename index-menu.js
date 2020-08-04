@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.get({
-        url: "layout/shared/menu.html",
+        url: "layout/menu-index.html",
         cache: false
     }).then(function(data) {
         $("#menu").html(data);
