@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.get({
-        url: "../../shared/footer.html",
+        url: "../../layout/footer.html",
         cache: false
     }).then(function(data) {
         $("#footer").html(data);
