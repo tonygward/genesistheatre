@@ -19,8 +19,8 @@ jobs:
 
       - id: 'Deploy'
         uses: 'google-github-actions/setup-gcloud@v1'
-        run: gsutil -m rsync -d -c -r . gs://www.genesistheatre.co.uk
-        run: gsutil -m setmeta -h "Cache-Control:public, max-age=1800" gs://www.genesistheatre.co.uk/*.html
+      - run: gsutil -m rsync -d -c -r . gs://www.genesistheatre.co.uk
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=1800" gs://www.genesistheatre.co.uk/*.html
 
       # - uses: actions/checkout@v3
       #   with:
