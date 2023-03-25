@@ -13,7 +13,7 @@ jobs:
         with:
           ref: refs/heads/master
           fetch-depth: 1
-      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@v0
         with:
           version: '276.0.0'
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
